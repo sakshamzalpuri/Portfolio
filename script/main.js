@@ -1,7 +1,13 @@
+document.addEventListener("scroll", () => {
+  const scrollTop = window.scrollY;
+  const docHeight = document.body.scrollHeight - window.innerHeight;
+  const scrollPercent = (scrollTop / docHeight) * 100;
+  document.getElementById("scroll-progress").style.height = scrollPercent + "%";
+})
+
 const themeToggle = document.getElementById("themeToggle")
 const body = document.body
 
-// Check for saved theme preference or default to 'light'
 const currentTheme = localStorage.getItem("theme") || "light"
 body.setAttribute("data-theme", currentTheme)
 
@@ -74,31 +80,39 @@ contactForm.addEventListener("submit", (e) => {
 window.addEventListener("scroll", () => {
   const navbar = document.querySelector(".navbar")
   if (window.scrollY > 100) {
+    navbar.classList.add("scrolled")
     navbar.style.boxShadow = "0 2px 20px rgba(0, 0, 0, 0.1)"
   } else {
+    navbar.classList.remove("scrolled")
     navbar.style.boxShadow = "none"
   }
 })
 
-// Intersection Observer for animations
+// Intersection Observer for scroll animations
 const observerOptions = {
   threshold: 0.1,
-  rootMargin: "0px 0px -50px 0px",
+  rootMargin: "0px 0px -100px 0px",
 }
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
+      entry.target.classList.add("animate")
       entry.target.style.opacity = "1"
       entry.target.style.transform = "translateY(0)"
     }
   })
 }, observerOptions)
 
+// Observe elements for animation on scroll
+document.querySelectorAll(".section-title, .section-para, .skill-category h3, .project-card").forEach((el) => {
+  observer.observe(el)
+})
+
 
 
 // Add typing effect to hero title
-function typeWriter(element, text, speed ) {
+function typeWriter(element, text, speed) {
   let i = 0;
   element.innerHTML = "";
   const interval = setInterval(() => {

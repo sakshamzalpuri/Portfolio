@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saksham - Frontend Developer</title>
+    <title>Portfolio - Saksham Zalpuri</title>
     <link rel="stylesheet" href="style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link
@@ -20,10 +20,12 @@
 </head>
 
 <body>
-
+    <div id="scroll-progress-container">
+        <div id="scroll-progress"></div>
+    </div>
     <nav class="navbar">
         <div class="nav-container">
-            <div class="logo">Saksham.</div>
+            <div class="logo"><a href="#about">Saksham.</a></div>
             <div class="toogle">
                 <ul class="nav-menu">
                     <li><a href="#about">About</a></li>
@@ -57,20 +59,21 @@
                 </div>
 
                 <p class="hero-description">
-                    A goal-oriented developer with hands-on experience in building responsive, interactive websites using HTML, CSS, and JavaScript. Passionate about problem-solving and eager to grow through real-world projects and team collaboration.
+                    Frontend developer building responsive, user-focused web interfaces using HTML, CSS, and JavaScript,
+                    React. I focus on clean UI, performance, and turning ideas into functional, real-world applications.
                 </p>
 
                 <div class="hero-actions">
-                    <a class="resume-btn" href="resume.pdf" download>
+                    <a class="resume-btn" href="/resume.pdf" target="_blank">
                         <i class="fas fa-download"></i>
                         Resume
                     </a>
+
                     <div class="social-links">
-                        <a href="https://github.com/sakshamA200" target="_blank" class="social-link" title="Github"><i
-                                class="ri-github-fill"></i></a>
-                        <a href="#" class="social-link" title="Email"><i class="ri-mail-line"></i></a>
-                        <a href="https://x.com/sakshamA200" target="_blank" class="social-link" title="Twitter"><i
-                                class="ri-twitter-x-fill"></i></a>
+                        <a href="https://github.com/sakshamzalpuri" target="_blank" class="social-link"
+                            title="Github"><i class="ri-github-fill"></i></a>
+                        <a href="mailto:saksham.zalpuri200@gmail.com" class="social-link" title="Email"><i
+                                class="ri-mail-line"></i></a>
                         <a href="https://www.linkedin.com/in/saksham-zalpuri-73b71b2bb/" target="_blank"
                             class="social-link" title="LinkedIn"><i class="ri-linkedin-box-fill"></i></a>
                     </div>
@@ -107,9 +110,9 @@
                         </div>
                         <div class="skill-items">
                             <div class="skill-item">
-                                <img src="assets/icons/svg/skills/tailwind-css.svg" alt="Tailwind">
+                                <img src="assets/icons/svg/skills/react.svg" alt="React">
                             </div>
-                            <p>Tailwind</p>
+                            <p>React</p>
                         </div>
                     </div>
 
@@ -150,17 +153,140 @@
                             <img src="assets/images/Proj/weather.png" alt="Weather app">
                         </div>
                         <div class="project-content">
-                            <h3>Weather App</h3>
-                            <p>A dynamic weather dashboard that displays real-time weather information based on user
-                                location or search input using mock API data and interactive UI.</p>
+                            <h3>WeatherWave</h3>
+                            <p>
+                                A real-time weather application that provides accurate forecasts, current conditions,
+                                and location-based weather insights with a clean, responsive UI.</p>
                             <div class="project-tech">
                                 <span class="tech-tag">HTML</span>
                                 <span class="tech-tag">CSS</span>
                                 <span class="tech-tag">JavaScript</span>
                                 <span class="tech-tag">OpenWeather API</span>
                             </div>
-                            <div class="project-links">
-                                <a href="https://sakshama200.github.io/weather-app/" class="project-link" target="_blank">
+                            <h3>Key Features:</h3>
+                            <p>
+                                <li>Real-time weather data using OpenWeatherMap API with async/await</li>
+
+                                <li>Input validation and graceful handling of invalid cities and network errors</li>
+
+                                <li>Optimized performance through reduced API calls and efficient DOM updates</li>
+
+                                <li>Clean separation of data fetching and UI rendering logic</li>
+                                <li>Fully responsive layout using CSS Flexbox, Grid, and media queries</li>
+                            </p>
+                            <div class="project-link">
+                                <a href="https://sakshama200.github.io/weather-app/" class="project-link"
+                                    target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Live
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/Proj/ecommerce-dashboard.png" alt="E-commerce Product Dashboard">
+                        </div>
+                        <div class="project-content">
+                            <h3>E-Commerce Product Dashboard</h3>
+                            <p>
+                                An interactive product dashboard that displays products from an external API, allowing
+                                users to browse, search, filter, sort, and manage a shopping cart with persistent state.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Fake Store API</span>
+                            </div>
+                            <h3>Key Features:</h3>
+                            <p>
+                                <li>Dynamically fetched and rendered products using Fetch API and async/await</li>
+
+                                <li>Search, category filtering, and price-based sorting with debounced inputs</li>
+
+                                <li>Cart management with real-time quantity updates and total price calculation</li>
+                                <li>Persistent cart state using localStorage across page reloads</li>
+
+                                <li>Modular JavaScript structure separating data, UI, and cart logic</li>
+
+                                <li>Responsive grid-based UI built with CSS Grid and Flexbox</li>
+                            </p>
+                            <div class="project-link">
+                                <a href="https://sakshama200.github.io/ecommerce-dashboard/" class="project-link"
+                                    target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Live
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/Proj/todo-dashboard.png" alt="Advanced To-Do Dashboard">
+                        </div>
+                        <div class="project-content">
+                            <h3>Advanced To-Do Dashboard</h3>
+                            <p>A feature-rich task management dashboard that enables users to efficiently create,
+                                manage, and track tasks with persistent state and optimized performance.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">localStorage</span>
+                            </div>
+                            <h3>Key Features:</h3>
+                            <p>
+                                <li>Full CRUD task management using vanilla JavaScript and efficient DOM manipulation
+                                </li>
+
+                                <li>Task filtering (All / Active / Completed) implemented with event delegation</li>
+
+                                <li>Persistent application state using localStorage across browser sessions</li>
+
+                                <li>Clear separation of state management, business logic, and UI rendering</li>
+                                <li>Optimized DOM updates by re-rendering only affected nodes</li>
+
+                                <li>Responsive layout built with CSS Flexbox and media queries</li>
+                            </p>
+                            <div class="project-link">
+                                <a href="https://sakshama200.github.io/todo-dashboard/" class="project-link"
+                                    target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Live
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="assets/images/Proj/weather.png" alt="Weather app">
+                        </div>
+                        <div class="project-content">
+                            <h3>Sidcup Family Golf — Landing Page Clone</h3>
+                            <p>
+                                A pixel-perfect recreation of the Sidcup Family Golf landing page, focusing on smooth
+                                scroll-based animations, visual accuracy, and responsive layout.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">GSAP</span>
+                            </div>
+                            <h3>Key Features:</h3>
+                            <p>
+                                <li>Recreated a pixel-perfect landing page with GSAP scroll-trigger animations</li>
+
+                                <li>Achieved smooth 60FPS interactions using timelines and controlled easing</li>
+
+                                <li>Improved layout responsiveness with fluid containers and flexible grids</li>
+
+                                <li>Matched original brand design with high visual fidelity.</li>
+                            </p>
+                            <div class="project-link">
+                                <a href="https://sakshama200.github.io/weather-app/" class="project-link"
+                                    target="_blank">
                                     <i class="fas fa-external-link-alt"></i>
                                     Live
                                 </a>
@@ -168,27 +294,7 @@
                         </div>
                     </div>
 
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="assets/images/Proj/multistep-form.png" alt="Login form">
-                        </div>
-                        <div class="project-content">
-                            <h3>Multi-Step Form</h3>
-                            <p>A step-by-step registration form with smooth transitions and real-time input validation,
-                                guiding users through multiple sections for a seamless signup experience.</p>
-                            <div class="project-tech">
-                                <span class="tech-tag">HTML</span>
-                                <span class="tech-tag">CSS</span>
-                                <span class="tech-tag">JavaScript</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://sakshama200.github.io/multi_step_register_fom/" class="project-link" target="_blank">
-                                    <i class="fas fa-external-link-alt"></i>
-                                    Live
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </section>
@@ -252,6 +358,9 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/all.min.js"
+        integrity="sha512-fxASHhXi6WjjUR9Hr8qt2IxNW2AzyZOpoPi4+UgVU0lTFNKMQ8INkZaQ5ZED2aAldHuHNaLlaHuwQ1oGT+LHhw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script/main.js"></script>
 </body>
 
