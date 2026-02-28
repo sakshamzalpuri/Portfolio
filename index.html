@@ -1,364 +1,323 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio - Saksham Zalpuri</title>
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
-</head>
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+  </head>
 
-<body>
+  <body>
+    <!-- <h1 class="counter">0</h1> 
+    <div class="overlay"> 
+     <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div> -->
+
+    <!-- Mouse trail -->
+
+   <!-- <div class="cursor">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div> 
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div> -->
+
+    <!-- Scroll Progress -->
     <div id="scroll-progress-container">
-        <div id="scroll-progress"></div>
+      <div id="scroll-progress"></div>
     </div>
+
+    <!-- Navbar -->
+
     <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo"><a href="#about">Saksham.</a></div>
-            <div class="toogle">
-                <ul class="nav-menu">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
-                <div class="mobile-menu-toggle" id="mobileMenuToggle">
-                    <i class="fas fa-bars"></i>
-                </div>
-            </div>
+      <div class="nav-container">
+        <div class="logo"><a href="#about">Saksham.</a></div>
+        <div class="toogle">
+          <ul class="nav-menu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+          </ul>
+          <button class="theme-toggle" id="themeToggle">
+            <i class="fas fa-moon"></i>
+          </button>
+          <div class="mobile-menu-toggle" id="mobileMenuToggle">
+            <i class="fas fa-bars"></i>
+          </div>
         </div>
+      </div>
     </nav>
 
     <main class="main-content">
-        <section class="hero" id="about">
-            <div class="container">
-                <h1 class="hero-title">Saksham Zalpuri</h1>
-                <p class="hero-subtitle">Frontend Developer</p>
+      <section class="hero" id="about">
+        <div class="container">
+          <h1 class="hero-title">Saksham Zalpuri</h1>
+          <p class="hero-subtitle">Frontend Developer</p>
 
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <span>saksham.zalpuri200@gmail.com</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Pune, India</span>
-                    </div>
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <span>saksham.zalpuri200@gmail.com</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Pune, India</span>
+            </div>
+          </div>
+
+          <p class="hero-description">
+            Frontend developer building responsive, user-focused web interfaces
+            using HTML, CSS, and JavaScript, React. I focus on clean UI,
+            performance, and turning ideas into functional, real-world
+            applications.
+          </p>
+
+          <div class="hero-actions">
+            <a class="resume-btn" href="/resume.pdf" target="_blank">
+              <i class="fas fa-download"></i>
+              Resume
+            </a>
+            <div class="social-links">
+              <a
+                href="https://github.com/sakshamzalpuri"
+                target="_blank"
+                class="social-link"
+                title="Github"
+                ><i class="ri-github-fill"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/saksham-zalpuri-73b71b2bb/"
+                target="_blank"
+                class="social-link"
+                title="LinkedIn"
+                ><i class="ri-linkedin-box-fill"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills" id="skills">
+        <div class="container">
+          <h2 class="section-title">My Skills</h2>
+          <p class="section-para">
+            Technologies and tools I’ve used across my projects and learning
+            journey.
+          </p>
+
+          <div class="skill-category">
+            <h3>Front End</h3>
+            <div class="skill-icons">
+              <div class="skill-items">
+                <div class="skill-item">
+                  <img src="assets/icons/svg/skills/html.svg" alt="HTMl" />
                 </div>
+                <p>HTML</p>
+              </div>
+              <div class="skill-items">
+                <div class="skill-item">
+                  <img src="assets/icons/svg/skills/css.svg" alt="CSS" />
+                </div>
+                <p>CSS</p>
+              </div>
+              <div class="skill-items">
+                <div class="skill-item">
+                  <img
+                    src="assets/icons/svg/skills/javascript.svg"
+                    alt="JavaScript"
+                  />
+                </div>
+                <p>JavaScript</p>
+              </div>
+              <div class="skill-items">
+                <div class="skill-item">
+                  <img src="assets/icons/svg/skills/react.svg" alt="React" />
+                </div>
+                <p>React</p>
+              </div>
+            </div>
 
-                <p class="hero-description">
-                    Frontend developer building responsive, user-focused web interfaces using HTML, CSS, and JavaScript,
-                    React. I focus on clean UI, performance, and turning ideas into functional, real-world applications.
+            <div class="skill-category">
+              <h3>Tools</h3>
+              <div class="skill-icons">
+                <div class="skill-items">
+                  <div class="skill-item">
+                    <img src="assets/icons/svg/skills/git.svg" alt="HTMl" />
+                  </div>
+                  <p>Git</p>
+                </div>
+                <div class="skill-items">
+                  <div class="skill-item">
+                    <img src="assets/icons/svg/skills/github.svg" alt="CSS" />
+                  </div>
+                  <p>Github</p>
+                </div>
+                <div class="skill-items">
+                  <div class="skill-item">
+                    <img
+                      src="assets/icons/svg/skills/vscode.svg"
+                      alt="JavaScript"
+                    />
+                  </div>
+                  <p>VS Code</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects" id="projects">
+        <div class="container">
+          <h2 class="section-title">Projects</h2>
+
+          <div class="projects-grid">
+            <div class="project-card">
+              <div class="project-image project-image-placeholder project-image--weather">
+                <i class="fas fa-cloud-sun" aria-hidden="true"></i>
+              </div>
+              <div class="project-content">
+                <h3>Weather Dashboard — Real-Time Weather Application</h3>
+                <p>
+                  A dynamic weather dashboard that fetches live weather data from
+                  an external API and displays real-time conditions based on
+                  user input.
                 </p>
-
-                <div class="hero-actions">
-                    <a class="resume-btn" href="/resume.pdf" target="_blank">
-                        <i class="fas fa-download"></i>
-                        Resume
-                    </a>
-                    <div class="social-links">
-                        <a href="https://github.com/sakshamzalpuri" target="_blank" class="social-link"
-                            title="Github"><i class="ri-github-fill"></i></a>
-                        <a href="https://www.linkedin.com/in/saksham-zalpuri-73b71b2bb/" target="_blank"
-                            class="social-link" title="LinkedIn"><i class="ri-linkedin-box-fill"></i></a>
-                    </div>
+                <div class="project-tech">
+                  <span class="tech-tag">HTML</span>
+                  <span class="tech-tag">CSS</span>
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">REST API</span>
                 </div>
+                <h3>Key Features:</h3>
+                <ul>
+                  <li>Integrated weather API using async/await and fetch()</li>
+                  <li>Implemented real-time DOM updates based on API response</li>
+                  <li>Added error handling for invalid city names</li>
+                  <li>Designed responsive UI with weather condition icons</li>
+                  <li>Managed state updates efficiently to prevent redundant API calls</li>
+                </ul>
+                <div class="project-link">
+                  <a href="https://sakshamzalpuri.github.io/weather-dashboard/" class="project-link" target="_blank">
+                    <i class="fas fa-external-link-alt"></i>
+                    Live
+                  </a>
+                </div>
+              </div>
             </div>
-        </section>
-
-        <section class="skills" id="skills">
-            <div class="container">
-                <h2 class="section-title">My Skills</h2>
-                <p class="section-para">Technologies and tools I’ve used across my projects and learning journey.
+            <div class="project-card">
+              <div class="project-image project-image-placeholder project-image--expense">
+                <i class="fas fa-wallet" aria-hidden="true"></i>
+              </div>
+              <div class="project-content">
+                <h3>Expense Tracker — Client-Side Finance Manager</h3>
+                <p>
+                  A browser-based expense management tool that allows users to
+                  add, remove, and track transactions with persistent storage.
                 </p>
-
-                <div class="skill-category">
-                    <h3>Front End</h3>
-                    <div class="skill-icons">
-                        <div class="skill-items">
-                            <div class="skill-item">
-                                <img src="assets/icons/svg/skills/html.svg" alt="HTMl">
-                            </div>
-                            <p>HTML</p>
-                        </div>
-                        <div class="skill-items">
-                            <div class="skill-item">
-                                <img src="assets/icons/svg/skills/css.svg" alt="CSS">
-                            </div>
-                            <p>CSS</p>
-                        </div>
-                        <div class="skill-items">
-                            <div class="skill-item">
-                                <img src="assets/icons/svg/skills/javascript.svg" alt="JavaScript">
-                            </div>
-                            <p>JavaScript</p>
-                        </div>
-                        <div class="skill-items">
-                            <div class="skill-item">
-                                <img src="assets/icons/svg/skills/react.svg" alt="React">
-                            </div>
-                            <p>React</p>
-                        </div>
-                    </div>
-
-                    <div class="skill-category">
-                        <h3>Tools</h3>
-                        <div class="skill-icons">
-                            <div class="skill-items">
-                                <div class="skill-item">
-                                    <img src="assets/icons/svg/skills/git.svg" alt="HTMl">
-                                </div>
-                                <p>Git</p>
-                            </div>
-                            <div class="skill-items">
-                                <div class="skill-item">
-                                    <img src="assets/icons/svg/skills/github.svg" alt="CSS">
-                                </div>
-                                <p>Github</p>
-                            </div>
-                            <div class="skill-items">
-                                <div class="skill-item">
-                                    <img src="assets/icons/svg/skills/vscode.svg" alt="JavaScript">
-                                </div>
-                                <p>VS Code</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="project-tech">
+                  <span class="tech-tag">HTML</span>
+                  <span class="tech-tag">CSS</span>
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">LocalStorage</span>
                 </div>
-            </div>
-        </section>
-
-        <section class="projects" id="projects">
-            <div class="container">
-                <h2 class="section-title">Projects</h2>
-
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="assets/images/Proj/weather.png" alt="Weather app">
-                        </div>
-                        <div class="project-content">
-                            <h3>WeatherWave</h3>
-                            <p>
-                                A real-time weather application that provides accurate forecasts, current conditions,
-                                and location-based weather insights with a clean, responsive UI.</p>
-                            <div class="project-tech">
-                                <span class="tech-tag">HTML</span>
-                                <span class="tech-tag">CSS</span>
-                                <span class="tech-tag">JavaScript</span>
-                                <span class="tech-tag">OpenWeather API</span>
-                            </div>
-                            <h3>Key Features:</h3>
-                            <p>
-                                <li>Real-time weather data using OpenWeatherMap API with async/await</li>
-
-                                <li>Input validation and graceful handling of invalid cities and network errors</li>
-
-                                <li>Optimized performance through reduced API calls and efficient DOM updates</li>
-
-                                <li>Clean separation of data fetching and UI rendering logic</li>
-                                <li>Fully responsive layout using CSS Flexbox, Grid, and media queries</li>
-                            </p>
-                            <div class="project-link">
-                                <a href="https://sakshama200.github.io/weather-app/" class="project-link"
-                                    target="_blank">
-                                    <i class="fas fa-external-link-alt"></i>
-                                    Live
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="assets/images/Proj/ecommerce-dashboard.png" alt="E-commerce Product Dashboard">
-                        </div>
-                        <div class="project-content">
-                            <h3>E-Commerce Product Dashboard</h3>
-                            <p>
-                                An interactive product dashboard that displays products from an external API, allowing
-                                users to browse, search, filter, sort, and manage a shopping cart with persistent state.
-                            </p>
-                            <div class="project-tech">
-                                <span class="tech-tag">HTML</span>
-                                <span class="tech-tag">CSS</span>
-                                <span class="tech-tag">JavaScript</span>
-                                <span class="tech-tag">Fake Store API</span>
-                            </div>
-                            <h3>Key Features:</h3>
-                            <p>
-                                <li>Dynamically fetched and rendered products using Fetch API and async/await</li>
-
-                                <li>Search, category filtering, and price-based sorting with debounced inputs</li>
-
-                                <li>Cart management with real-time quantity updates and total price calculation</li>
-                                <li>Persistent cart state using localStorage across page reloads</li>
-
-                                <li>Modular JavaScript structure separating data, UI, and cart logic</li>
-
-                                <li>Responsive grid-based UI built with CSS Grid and Flexbox</li>
-                            </p>
-                            <div class="project-link">
-                                <a href="https://sakshama200.github.io/ecommerce-dashboard/" class="project-link"
-                                    target="_blank">
-                                    <i class="fas fa-external-link-alt"></i>
-                                    Live
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="assets/images/Proj/todo-dashboard.png" alt="Advanced To-Do Dashboard">
-                        </div>
-                        <div class="project-content">
-                            <h3>Advanced To-Do Dashboard</h3>
-                            <p>A feature-rich task management dashboard that enables users to efficiently create,
-                                manage, and track tasks with persistent state and optimized performance.
-                            </p>
-                            <div class="project-tech">
-                                <span class="tech-tag">HTML</span>
-                                <span class="tech-tag">CSS</span>
-                                <span class="tech-tag">JavaScript</span>
-                                <span class="tech-tag">localStorage</span>
-                            </div>
-                            <h3>Key Features:</h3>
-                            <p>
-                                <li>Full CRUD task management using vanilla JavaScript and efficient DOM manipulation
-                                </li>
-
-                                <li>Task filtering (All / Active / Completed) implemented with event delegation</li>
-
-                                <li>Persistent application state using localStorage across browser sessions</li>
-
-                                <li>Clear separation of state management, business logic, and UI rendering</li>
-                                <li>Optimized DOM updates by re-rendering only affected nodes</li>
-
-                                <li>Responsive layout built with CSS Flexbox and media queries</li>
-                            </p>
-                            <div class="project-link">
-                                <a href="https://sakshama200.github.io/todo-dashboard/" class="project-link"
-                                    target="_blank">
-                                    <i class="fas fa-external-link-alt"></i>
-                                    Live
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="assets/images/Proj/weather.png" alt="Weather app">
-                        </div>
-                        <div class="project-content">
-                            <h3>Sidcup Family Golf — Landing Page Clone</h3>
-                            <p>
-                                A pixel-perfect recreation of the Sidcup Family Golf landing page, focusing on smooth
-                                scroll-based animations, visual accuracy, and responsive layout.</p>
-                            <div class="project-tech">
-                                <span class="tech-tag">HTML</span>
-                                <span class="tech-tag">CSS</span>
-                                <span class="tech-tag">JavaScript</span>
-                                <span class="tech-tag">GSAP</span>
-                            </div>
-                            <h3>Key Features:</h3>
-                            <p>
-                                <li>Recreated a pixel-perfect landing page with GSAP scroll-trigger animations</li>
-
-                                <li>Achieved smooth 60FPS interactions using timelines and controlled easing</li>
-
-                                <li>Improved layout responsiveness with fluid containers and flexible grids</li>
-
-                                <li>Matched original brand design with high visual fidelity.</li>
-                            </p>
-                            <div class="project-link">
-                                <a href="https://sakshama200.github.io/weather-app/" class="project-link"
-                                    target="_blank">
-                                    <i class="fas fa-external-link-alt"></i>
-                                    Live
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-
+                <h3>Key Features:</h3>
+                <ul>
+                  <li>Implemented CRUD functionality for income and expenses</li>
+                  <li>Used localStorage for persistent data storage</li>
+                  <li>Calculated total balance dynamically using array methods (reduce)</li>
+                  <li>Added form validation for user input accuracy</li>
+                  <li>Structured code into modular functions for maintainability</li>
+                </ul>
+                <div class="project-link">
+                  <a href="https://sakshamzalpuri.github.io/expense-tracker/" class="project-link" target="_blank">
+                    <i class="fas fa-external-link-alt"></i>
+                    Live
+                  </a>
                 </div>
+              </div>
             </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section class="contact" id="contact">
-            <div class="container">
-                <h2 class="section-title">Get In Touch</h2>
-
-                <div class="contact-content">
-                    <div class="contact-info-section">
-                        <h3>Let's work together</h3>
-                        <p>I'm always interested in new opportunities and exciting projects. Feel free to reach out if
-                            you'd like to collaborate!</p>
-
-                        <div class="contact-details">
-                            <div class="contact-detail">
-                                <i class="fas fa-envelope"></i>
-                                <span>saksham.zalpuri200@gmail.com</span>
-                            </div>
-                            <div class="contact-detail">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <span>Pune, India</span>
-                            </div>
-                            <div class="contact-detail">
-                                <i class="fas fa-phone"></i>
-                                <span>+91 6006214973</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <form class="contact-form">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject" name="subject" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="submit-btn">Send Message</button>
-                    </form>
+            <div class="project-card">
+              <div class="project-image project-image-placeholder project-image--auth">
+                <i class="fas fa-user-lock" aria-hidden="true"></i>
+              </div>
+              <div class="project-content">
+                <h3>Auth-Ease — Frontend Authentication UI</h3>
+                <p>
+                  A modern authentication interface featuring login and signup
+                  forms with interactive UI behavior.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">HTML</span>
+                  <span class="tech-tag">CSS</span>
+                  <span class="tech-tag">JavaScript</span>
                 </div>
+                <h3>Key Features:</h3>
+                <ul>
+                  <li>Built interactive login/signup toggle system</li>
+                  <li>Implemented client-side form validation</li>
+                  <li>Designed clean and modern UI with responsive layout</li>
+                  <li>Structured CSS for maintainable component styling</li>
+                  <li>Enhanced UX with smooth transitions and visual feedback</li>
+                </ul>
+                <div class="project-link">
+                  <a href="https://sakshamzalpuri.github.io/auth-ease/" class="project-link" target="_blank">
+                    <i class="fas fa-external-link-alt"></i>
+                    Live
+                  </a>
+                </div>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2025 Saksham Zalpuri. All rights reserved.</p>
-
-            </div>
+      <div class="container">
+        <div class="footer-content">
+          <p>&copy; 2025 Saksham Zalpuri. All rights reserved.</p>
         </div>
+      </div>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/all.min.js"
-        integrity="sha512-fxASHhXi6WjjUR9Hr8qt2IxNW2AzyZOpoPi4+UgVU0lTFNKMQ8INkZaQ5ZED2aAldHuHNaLlaHuwQ1oGT+LHhw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="script/main.js"></script>
-</body>
 
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+      integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script/main.js"></script>
+    <script src="script/gsap.js"></script>
+  </body>
 </html>
