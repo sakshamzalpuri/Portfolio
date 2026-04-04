@@ -1,118 +1,116 @@
-// 
-const themeToggle = document.getElementById("themeToggle")
-const body = document.body
+document.addEventListener("scroll", () => {
+  const scrollTop = window.scrollY;
+  const docHeight = document.body.scrollHeight - window.innerHeight;
+  const scrollPercent = (scrollTop / docHeight) * 100;
+  const scrollProgress = document.getElementById("scroll-progress");
+  scrollProgress.style.width = scrollPercent + "%";
+})
 
-const currentTheme = localStorage.getItem("theme") || "light"
-body.setAttribute("data-theme", currentTheme)
+const menuToggle = document.getElementById("menu-toggle")
+const sideMenu = document.getElementById("side-menu")
+const menuOverlay = document.getElementById("menu-overlay")
 
-// Update theme toggle icon
-function updateThemeIcon(theme) {
-  const icon = themeToggle.querySelector("i")
-  if (theme === "dark") {
-    icon.className = "fas fa-sun"
-  } else {
-    icon.className = "fas fa-moon"
-  }
+function closeMenu() {
+  document.body.classList.remove("menu-open")
+  if (menuToggle) menuToggle.setAttribute("aria-expanded", "false")
+if (sideMenu) sideMenu.setAttribute("aria-hidden", "true")
 }
 
-updateThemeIcon(currentTheme)
+function openMenu() {
+  document.body.classList.add("menu-open")
+  if (menuToggle) menuToggle.setAttribute("aria-expanded", "true")
+  if (sideMenu) sideMenu.setAttribute("aria-hidden", "false")
+}
 
-themeToggle.addEventListener("click", () => {
-  const currentTheme = body.getAttribute("data-theme")
-  const newTheme = currentTheme === "dark" ? "light" : "dark"
-
-  body.setAttribute("data-theme", newTheme)
-  localStorage.setItem("theme", newTheme)
-  updateThemeIcon(newTheme)
-})
-
-// Mobile Menu Toggle
-const mobileMenuToggle = document.getElementById("mobileMenuToggle")
-const navMenu = document.querySelector(".nav-menu")
-
-mobileMenuToggle.addEventListener("click", () => {
-  navMenu.classList.toggle(".nav-manu")
-})
-
-// Smooth scrolling for navigation links
-document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-  anchor.addEventListener("click", function (e) {
-    e.preventDefault()
-    const target = document.querySelector(this.getAttribute("href"))
-    if (target) {
-      target.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      })
+if (menuToggle && sideMenu && menuOverlay) {
+  menuToggle.addEventListener("click", () => {
+    const isOpen = document.body.classList.contains("menu-open")
+    if (isOpen) {
+      closeMenu()
+      return
     }
+
+    openMenu()
   })
-})
 
-// Contact form submission
-const contactForm = document.querySelector(".contact-form")
-contactForm.addEventListener("submit", (e) => {
-  e.preventDefault()
+  menuOverlay.addEventListener("click", closeMenu)
 
-  const formData = new FormData(contactForm)
-  const name = formData.get("name")
-  const email = formData.get("email")
-  const subject = formData.get("subject")
-  const message = formData.get("message")
-
-  // Simple validation
-  if (!name || !email || !subject || !message) {
-    alert("Please fill in all fields")
-    return
-  }
-
-  // Simulate form submission
-  alert("Thank you for your message! I'll get back to you soon.")
-  contactForm.reset()
-})
-
-// Add scroll effect to navbar
-window.addEventListener("scroll", () => {
-  const navbar = document.querySelector(".navbar")
-  if (window.scrollY > 100) {
-    navbar.style.boxShadow = "0 2px 20px rgba(0, 0, 0, 0.1)"
-  } else {
-    navbar.style.boxShadow = "none"
-  }
-})
-
-// Intersection Observer for animations
-const observerOptions = {
-  threshold: 0.1,
-  rootMargin: "0px 0px -50px 0px",
-}
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.style.opacity = "1"
-      entry.target.style.transform = "translateY(0)"
-    }
+  sideMenu.querySelectorAll('a[href^="#"]').forEach((link) => {
+    link.addEventListener("click", closeMenu)
   })
-}, observerOptions)
 
-
-
-// Add typing effect to hero title
-function typeWriter(element, text, speed) {
-  let i = 0;
-  element.innerHTML = "";
-  const interval = setInterval(() => {
-    if (i < text.length) {
-      element.innerHTML += text.charAt(i++);
-    } else {
-      clearInterval(interval);
-    }
-  }, speed);
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") closeMenu()
+  })
 }
 
-// Initialize typing effect when page loads
-window.addEventListener("load", () => {
-  const heroTitle = document.querySelector(".hero-title")
-  const originalText = heroTitle.textContent
-  typeWriter(heroTitle, originalText, 100)
-})
+const projectCards = [
+  {
+    number: "01",
+    title: "Weather Dashboard",
+    role: "Real-time web app",
+    description:
+      "Dynamic weather dashboard fetching live data from an external API with real-time DOM updates and error handling for invalid city names.",
+    tags: ["HTML", "CSS", "JavaScript", "REST API"],
+    notes: ["async/await · fetch()", "Error handling · DOM"],
+    link: "#projects",
+  },
+  {
+    number: "02",
+    title: "Expense Tracker",
+    role: "Client-side finance tool",
+    description:
+      "Browser-based expense manager with full CRUD, localStorage persistence, and dynamic balance calculation using array methods.",
+    tags: ["HTML", "CSS", "JavaScript", "LocalStorage"],
+    notes: ["CRUD · reduce()", "Form validation"],
+    link: "#projects",
+  },
+  {
+    number: "03",
+    title: "Auth-Ease",
+    role: "Frontend auth UI",
+    description:
+      "Responsive authentication interface with login and signup flows, clean transitions, and a focused user experience.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    notes: ["UI states · transitions", "Validation · UX"],
+    link: "https://sakshamzalpuri.github.io/auth-ease/",
+  },
+]
+
+function renderProjects(mountEl, projects) {
+  mountEl.innerHTML = projects
+    .map(
+      (project) => {
+        const isExternal = project.link.startsWith("http")
+
+        return `
+      <article class="project-card">
+        <div class="project-main">
+          <span class="project-index">${project.number} —</span>
+          <h3 class="project-title">${project.title}</h3>
+          <p class="project-role">${project.role}</p>
+          <p class="project-description">${project.description}</p>
+          <div class="project-tags">
+            ${project.tags
+            .map((tag) => `<span class="project-tag">${tag}</span>`)
+            .join("")}
+          </div>
+        </div>
+        <div class="project-aside">
+          <a class="project-action" href="${project.link}"${isExternal ? ' target="_blank" rel="noreferrer"' : ""} aria-label="Open ${project.title}">
+            <i class="fas fa-arrow-up-right-long" aria-hidden="true"></i>
+          </a>
+          <div class="project-notes">
+            ${project.notes
+            .map((note) => `<span>${note}</span>`)
+            .join("")}
+          </div>
+        </div>
+      </article>`
+      }
+    )
+    .join("")
+}
+
+const projectsMount = document.getElementById("projects-grid")
+if (projectsMount) renderProjects(projectsMount, projectCards)

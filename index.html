@@ -1,323 +1,132 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio - Saksham Zalpuri</title>
-    <link rel="stylesheet" href="style/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
-  </head>
 
-  <body>
-    <!-- <h1 class="counter">0</h1> 
-    <div class="overlay"> 
-     <div class="bar"></div>
-      <div class="bar"></div>
-      <div class="bar"></div>
-      <div class="bar"></div>
-      <div class="bar"></div>
-      <div class="bar"></div>
-      <div class="bar"></div>
-      <div class="bar"></div>
-      <div class="bar"></div>
-      <div class="bar"></div>
-    </div> -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Saksham Zalpuri</title>
+  <link rel="stylesheet" href="style/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+</head>
 
-    <!-- Mouse trail -->
+<body>
+  <div class="scroll-progress" id="scroll-progress"></div>
 
-   <!-- <div class="cursor">
-      <div class="dot"></div>
-      <div class="dot"></div>
-      <div class="dot"></div>
-      <div class="dot"></div> 
-      <div class="dot"></div>
-      <div class="dot"></div>
-      <div class="dot"></div>
-    </div> -->
+  <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="side-menu">
+    <span></span>
+    <span></span> 
+    <span></span>
+  </button>
 
-    <!-- Scroll Progress -->
-    <div id="scroll-progress-container">
-      <div id="scroll-progress"></div>
-    </div>
+  <div class="menu-overlay" id="menu-overlay" aria-hidden="true"></div>
 
-    <!-- Navbar -->
-
-    <nav class="navbar">
-      <div class="nav-container">
-        <div class="logo"><a href="#about">Saksham.</a></div>
-        <div class="toogle">
-          <ul class="nav-menu">
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-          </ul>
-          <button class="theme-toggle" id="themeToggle">
-            <i class="fas fa-moon"></i>
-          </button>
-          <div class="mobile-menu-toggle" id="mobileMenuToggle">
-            <i class="fas fa-bars"></i>
-          </div>
-        </div>
-      </div>
+  <aside class="side-menu" id="side-menu" aria-hidden="true">
+    <p class="side-menu-label">Navigation</p>
+    <nav class="side-menu-links" aria-label="Section links">
+      <a href="#about">About</a>
+      <a href="#stack">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="https://docs.google.com/document/d/1kr63a4HDLjOSqqakwscgytU2vMtoTp3r/edit?usp=sharing&ouid=103548988459554626808&rtpof=true&sd=true" target="_blank" rel="noreferrer">Resume</a>
     </nav>
+  </aside>
 
-    <main class="main-content">
-      <section class="hero" id="about">
-        <div class="container">
-          <h1 class="hero-title">Saksham Zalpuri</h1>
-          <p class="hero-subtitle">Frontend Developer</p>
+  <main>
+    <section class="hero" id="about">
+      <div class="hero-left">
+        <p class="hero-subtitle">Frontend Developer</p>
+        <h1 class="hero-title">Saksham</h1>
+        <h1 class="hero-title-secondary">Zalpuri</h1>
 
-          <div class="contact-info">
-            <div class="contact-item">
-              <i class="fas fa-envelope"></i>
-              <span>saksham.zalpuri200@gmail.com</span>
-            </div>
-            <div class="contact-item">
-              <i class="fas fa-map-marker-alt"></i>
-              <span>Pune, India</span>
-            </div>
-          </div>
+        <p class="hero-description">
+          Frontend developer building responsive, user-focused web interfaces
+          using HTML, CSS, JavaScript and React. Clean UI, real performance,
+          ideas turned into working products.
+        </p>
+        <div class="hero-bottom">
+          <a href="https://docs.google.com/document/d/1kr63a4HDLjOSqqakwscgytU2vMtoTp3r/edit?usp=sharing&ouid=103548988459554626808&rtpof=true&sd=true" target="_blank" class="resume-route">View Resume →</a>
+          <a href="#projects" class="project-route">See Projects</a>
+        </div>
 
-          <p class="hero-description">
-            Frontend developer building responsive, user-focused web interfaces
-            using HTML, CSS, and JavaScript, React. I focus on clean UI,
-            performance, and turning ideas into functional, real-world
-            applications.
+      </div>
+      <div class="hero-right">
+        <div class="sp-badge">
+          <p class="sp-badge-text">
+            <span class="sp-badge-dot"></span>
+            Available for work
           </p>
-
-          <div class="hero-actions">
-            <a class="resume-btn" href="/resume.pdf" target="_blank">
-              <i class="fas fa-download"></i>
-              Resume
-            </a>
-            <div class="social-links">
-              <a
-                href="https://github.com/sakshamzalpuri"
-                target="_blank"
-                class="social-link"
-                title="Github"
-                ><i class="ri-github-fill"></i
-              ></a>
-              <a
-                href="https://www.linkedin.com/in/saksham-zalpuri-73b71b2bb/"
-                target="_blank"
-                class="social-link"
-                title="LinkedIn"
-                ><i class="ri-linkedin-box-fill"></i
-              ></a>
-            </div>
-          </div>
+          <p class="">Based in India · 2025</p>
         </div>
-      </section>
-
-      <section class="skills" id="skills">
-        <div class="container">
-          <h2 class="section-title">My Skills</h2>
-          <p class="section-para">
-            Technologies and tools I’ve used across my projects and learning
-            journey.
-          </p>
-
-          <div class="skill-category">
-            <h3>Front End</h3>
-            <div class="skill-icons">
-              <div class="skill-items">
-                <div class="skill-item">
-                  <img src="assets/icons/svg/skills/html.svg" alt="HTMl" />
-                </div>
-                <p>HTML</p>
-              </div>
-              <div class="skill-items">
-                <div class="skill-item">
-                  <img src="assets/icons/svg/skills/css.svg" alt="CSS" />
-                </div>
-                <p>CSS</p>
-              </div>
-              <div class="skill-items">
-                <div class="skill-item">
-                  <img
-                    src="assets/icons/svg/skills/javascript.svg"
-                    alt="JavaScript"
-                  />
-                </div>
-                <p>JavaScript</p>
-              </div>
-              <div class="skill-items">
-                <div class="skill-item">
-                  <img src="assets/icons/svg/skills/react.svg" alt="React" />
-                </div>
-                <p>React</p>
-              </div>
-            </div>
-
-            <div class="skill-category">
-              <h3>Tools</h3>
-              <div class="skill-icons">
-                <div class="skill-items">
-                  <div class="skill-item">
-                    <img src="assets/icons/svg/skills/git.svg" alt="HTMl" />
-                  </div>
-                  <p>Git</p>
-                </div>
-                <div class="skill-items">
-                  <div class="skill-item">
-                    <img src="assets/icons/svg/skills/github.svg" alt="CSS" />
-                  </div>
-                  <p>Github</p>
-                </div>
-                <div class="skill-items">
-                  <div class="skill-item">
-                    <img
-                      src="assets/icons/svg/skills/vscode.svg"
-                      alt="JavaScript"
-                    />
-                  </div>
-                  <p>VS Code</p>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="email">
+          <a href="">saksham.zalpuri200@gmail.com</a>
         </div>
-      </section>
-
-      <section class="projects" id="projects">
-        <div class="container">
-          <h2 class="section-title">Projects</h2>
-
-          <div class="projects-grid">
-            <div class="project-card">
-              <div class="project-image project-image-placeholder project-image--weather">
-                <i class="fas fa-cloud-sun" aria-hidden="true"></i>
-              </div>
-              <div class="project-content">
-                <h3>Weather Dashboard — Real-Time Weather Application</h3>
-                <p>
-                  A dynamic weather dashboard that fetches live weather data from
-                  an external API and displays real-time conditions based on
-                  user input.
-                </p>
-                <div class="project-tech">
-                  <span class="tech-tag">HTML</span>
-                  <span class="tech-tag">CSS</span>
-                  <span class="tech-tag">JavaScript</span>
-                  <span class="tech-tag">REST API</span>
-                </div>
-                <h3>Key Features:</h3>
-                <ul>
-                  <li>Integrated weather API using async/await and fetch()</li>
-                  <li>Implemented real-time DOM updates based on API response</li>
-                  <li>Added error handling for invalid city names</li>
-                  <li>Designed responsive UI with weather condition icons</li>
-                  <li>Managed state updates efficiently to prevent redundant API calls</li>
-                </ul>
-                <div class="project-link">
-                  <a href="https://sakshamzalpuri.github.io/weather-dashboard/" class="project-link" target="_blank">
-                    <i class="fas fa-external-link-alt"></i>
-                    Live
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="project-card">
-              <div class="project-image project-image-placeholder project-image--expense">
-                <i class="fas fa-wallet" aria-hidden="true"></i>
-              </div>
-              <div class="project-content">
-                <h3>Expense Tracker — Client-Side Finance Manager</h3>
-                <p>
-                  A browser-based expense management tool that allows users to
-                  add, remove, and track transactions with persistent storage.
-                </p>
-                <div class="project-tech">
-                  <span class="tech-tag">HTML</span>
-                  <span class="tech-tag">CSS</span>
-                  <span class="tech-tag">JavaScript</span>
-                  <span class="tech-tag">LocalStorage</span>
-                </div>
-                <h3>Key Features:</h3>
-                <ul>
-                  <li>Implemented CRUD functionality for income and expenses</li>
-                  <li>Used localStorage for persistent data storage</li>
-                  <li>Calculated total balance dynamically using array methods (reduce)</li>
-                  <li>Added form validation for user input accuracy</li>
-                  <li>Structured code into modular functions for maintainability</li>
-                </ul>
-                <div class="project-link">
-                  <a href="https://sakshamzalpuri.github.io/expense-tracker/" class="project-link" target="_blank">
-                    <i class="fas fa-external-link-alt"></i>
-                    Live
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="project-card">
-              <div class="project-image project-image-placeholder project-image--auth">
-                <i class="fas fa-user-lock" aria-hidden="true"></i>
-              </div>
-              <div class="project-content">
-                <h3>Auth-Ease — Frontend Authentication UI</h3>
-                <p>
-                  A modern authentication interface featuring login and signup
-                  forms with interactive UI behavior.
-                </p>
-                <div class="project-tech">
-                  <span class="tech-tag">HTML</span>
-                  <span class="tech-tag">CSS</span>
-                  <span class="tech-tag">JavaScript</span>
-                </div>
-                <h3>Key Features:</h3>
-                <ul>
-                  <li>Built interactive login/signup toggle system</li>
-                  <li>Implemented client-side form validation</li>
-                  <li>Designed clean and modern UI with responsive layout</li>
-                  <li>Structured CSS for maintainable component styling</li>
-                  <li>Enhanced UX with smooth transitions and visual feedback</li>
-                </ul>
-                <div class="project-link">
-                  <a href="https://sakshamzalpuri.github.io/auth-ease/" class="project-link" target="_blank">
-                    <i class="fas fa-external-link-alt"></i>
-                    Live
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-content">
-          <p>&copy; 2025 Saksham Zalpuri. All rights reserved.</p>
+        <div class="social-links">
+          <a href="https://github.com/sakshamzalpuri" target="_blank" class="social-link" title="Github"><i
+              class="ri-github-fill"></i></a>
+          <a href="https://www.linkedin.com/in/saksham-zalpuri-73b71b2bb/" target="_blank" class="social-link"
+            title="Linkedin"><i class="ri-linkedin-box-fill"></i></a>
         </div>
       </div>
-    </footer>
+    </section>
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
-      integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="script/main.js"></script>
-    <script src="script/gsap.js"></script>
-  </body>
+    <section class="skills stack-section" id="stack" aria-labelledby="stack-heading">
+      <div class="stack-inner">
+        <p class="stack-kicker" id="stack-heading"><span class="stack-kicker-star" aria-hidden="true">✱</span> MY STACK</p>
+        <div class="stack-mount">
+          <div class="stack-row">
+            <h3 class="stack-cat">FRONTEND</h3>
+            <ul class="stack-items">
+              <li class="stack-item"><img src="assets/icons/skills/html.svg" alt="HTML5" width="22" height="22" loading="lazy" decoding="async" /><span>HTML5</span></li>
+              <li class="stack-item"><img src="assets/icons/skills/css.svg" alt="CSS3" width="22" height="22" loading="lazy" decoding="async" /><span>CSS3</span></li>
+              <li class="stack-item"><img src="assets/icons/skills/javascript.svg" alt="JavaScript" width="22" height="22" loading="lazy" decoding="async" /><span>JavaScript</span></li>
+              <li class="stack-item"><img src="assets/icons/skills/react.svg" alt="React" width="22" height="22" loading="lazy" decoding="async" /><span>React</span></li>
+              <li class="stack-item"><img src="assets/icons/skills/tailwind-css.svg" alt="Tailwind CSS" width="22" height="22" loading="lazy" decoding="async" /><span>Tailwind CSS</span></li>
+              <li class="stack-item"><img src="https://cdn.simpleicons.org/gsap/88CE02" alt="GSAP" width="22" height="22" loading="lazy" decoding="async" /><span>GSAP</span></li>
+            </ul>
+          </div>
+
+          <div class="stack-row">
+            <h3 class="stack-cat">TOOLS</h3>
+            <ul class="stack-items">
+              <li class="stack-item"><img src="assets/icons/skills/git.svg" alt="Git" width="22" height="22" loading="lazy" decoding="async" /><span>Git</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="projects" id="projects">
+      <div class="container">
+        <div class="projects-header">
+          <h2 class="section-title">Projects</h2>
+        </div>
+
+        <div class="projects-grid" id="projects-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; 2025 Saksham Zalpuri. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+    integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script/main.js"></script>
+  <script src="script/gsap.js"></script>
+</body>
+
 </html>
