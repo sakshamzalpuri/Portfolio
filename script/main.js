@@ -1,10 +1,4 @@
-document.addEventListener("scroll", () => {
-  const scrollTop = window.scrollY;
-  const docHeight = document.body.scrollHeight - window.innerHeight;
-  const scrollPercent = (scrollTop / docHeight) * 100;
-  document.getElementById("scroll-progress").style.height = scrollPercent + "%";
-})
-
+// 
 const themeToggle = document.getElementById("themeToggle")
 const body = document.body
 
@@ -37,7 +31,7 @@ const mobileMenuToggle = document.getElementById("mobileMenuToggle")
 const navMenu = document.querySelector(".nav-menu")
 
 mobileMenuToggle.addEventListener("click", () => {
-  navMenu.classList.toggle("active")
+  navMenu.classList.toggle(".nav-manu")
 })
 
 // Smooth scrolling for navigation links
