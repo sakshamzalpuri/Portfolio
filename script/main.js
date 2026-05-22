@@ -13,7 +13,7 @@ const menuOverlay = document.getElementById("menu-overlay")
 function closeMenu() {
   document.body.classList.remove("menu-open")
   if (menuToggle) menuToggle.setAttribute("aria-expanded", "false")
-if (sideMenu) sideMenu.setAttribute("aria-hidden", "true")
+  if (sideMenu) sideMenu.setAttribute("aria-hidden", "true")
 }
 
 function openMenu() {
@@ -47,16 +47,36 @@ if (menuToggle && sideMenu && menuOverlay) {
 const projectCards = [
   {
     number: "01",
-    title: "Weather Dashboard",
-    role: "Real-time web app",
+    title: "Full-Stack E-Commerce Platform",
+    role: "AI-powered customer support",
     description:
-      "Dynamic weather dashboard fetching live data from an external API with real-time DOM updates and error handling for invalid city names.",
-    tags: ["HTML", "CSS", "JavaScript", "REST API"],
-    notes: ["async/await · fetch()", "Error handling · DOM"],
+      "E-commerce platform with AI chatbot for product, stock, and policy queries. REST APIs for products, auth, and cart. Responsive frontend with dynamic LLM workflows.",
+    tags: ["React.js", "Node.js", "Express.js", "MongoDB", "OpenAI API"],
+    notes: ["AI chatbot · REST APIs", "Dynamic LLM prompts"],
     link: "#projects",
   },
   {
     number: "02",
+    title: "AI-Powered Interview Prep Platform",
+    role: "Mock interview & feedback",
+    description:
+      "Interview prep platform with AI-generated questions, mock interviews, and automated feedback. Backend APIs for sessions and progress tracking. Responsive UI.",
+    tags: ["React.js", "Node.js", "Express.js", "MongoDB", "OpenAI API"],
+    notes: ["LLM feedback · Scoring workflows"],
+    link: "#projects",
+  },
+  {
+    number: "03",
+    title: "SmartForm – Multi-Step Registration UI",
+    role: "Multi-step form UI",
+    description:
+      "4-step registration flow with real-time validation, live error feedback, dynamic topic selection, and auto-progress logic. Mobile-first design with smooth transitions.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    notes: ["Step validation · Modular JS", "Mobile-first · Smooth UX"],
+    link: "#projects",
+  },
+  {
+    number: "04",
     title: "Expense Tracker",
     role: "Client-side finance tool",
     description:
@@ -64,16 +84,6 @@ const projectCards = [
     tags: ["HTML", "CSS", "JavaScript", "LocalStorage"],
     notes: ["CRUD · reduce()", "Form validation"],
     link: "#projects",
-  },
-  {
-    number: "03",
-    title: "Auth-Ease",
-    role: "Frontend auth UI",
-    description:
-      "Responsive authentication interface with login and signup flows, clean transitions, and a focused user experience.",
-    tags: ["HTML", "CSS", "JavaScript"],
-    notes: ["UI states · transitions", "Validation · UX"],
-    link: "https://sakshamzalpuri.github.io/auth-ease/",
   },
 ]
 
