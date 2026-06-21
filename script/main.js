@@ -47,44 +47,14 @@ if (menuToggle && sideMenu && menuOverlay) {
 const projectCards = [
   {
     number: "01",
-    title: "Full-Stack E-Commerce Platform",
-    role: "AI-powered customer support",
+    title: "GitHub Profile Finder",
+    role: "Frontend Developer",
     description:
-      "E-commerce platform with AI chatbot for product, stock, and policy queries. REST APIs for products, auth, and cart. Responsive frontend with dynamic LLM workflows.",
-    tags: ["React.js", "Node.js", "Express.js", "MongoDB", "OpenAI API"],
-    notes: ["AI chatbot · REST APIs", "Dynamic LLM prompts"],
-    link: "#projects",
-  },
-  {
-    number: "02",
-    title: "AI-Powered Interview Prep Platform",
-    role: "Mock interview & feedback",
-    description:
-      "Interview prep platform with AI-generated questions, mock interviews, and automated feedback. Backend APIs for sessions and progress tracking. Responsive UI.",
-    tags: ["React.js", "Node.js", "Express.js", "MongoDB", "OpenAI API"],
-    notes: ["LLM feedback · Scoring workflows"],
-    link: "#projects",
-  },
-  {
-    number: "03",
-    title: "SmartForm – Multi-Step Registration UI",
-    role: "Multi-step form UI",
-    description:
-      "4-step registration flow with real-time validation, live error feedback, dynamic topic selection, and auto-progress logic. Mobile-first design with smooth transitions.",
-    tags: ["HTML", "CSS", "JavaScript"],
-    notes: ["Step validation · Modular JS", "Mobile-first · Smooth UX"],
-    link: "#projects",
-  },
-  {
-    number: "04",
-    title: "Expense Tracker",
-    role: "Client-side finance tool",
-    description:
-      "Browser-based expense manager with full CRUD, localStorage persistence, and dynamic balance calculation using array methods.",
-    tags: ["HTML", "CSS", "JavaScript", "LocalStorage"],
-    notes: ["CRUD · reduce()", "Form validation"],
-    link: "#projects",
-  },
+      "A web application that interacts with the GitHub REST API to search for users and display their profile details, repositories, and statistics in a clean and responsive interface.",
+    tags: ["HTML", "CSS", "JavaScript", "GitHub API"],
+    notes: ["API Integration", "Responsive UI"],
+    link: "https://sakshamzalpuri.github.io/github-user-finder/",
+  }
 ]
 
 function renderProjects(mountEl, projects) {
@@ -108,7 +78,7 @@ function renderProjects(mountEl, projects) {
         </div>
         <div class="project-aside">
           <a class="project-action" href="${project.link}"${isExternal ? ' target="_blank" rel="noreferrer"' : ""} aria-label="Open ${project.title}">
-            <i class="fas fa-arrow-up-right-long" aria-hidden="true"></i>
+            <i class="fas fa-arrow-right" aria-hidden="true"></i>
           </a>
           <div class="project-notes">
             ${project.notes
