@@ -1,0 +1,33 @@
+header{
+    width: 100%;
+    border-bottom: 1px solid rgba(42, 42, 42, 0.3);
+}
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.header .logo a {
+    color: var(--tertiary);
+}
+
+.nav-links {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-links a {
+    color: var(--neutral);
+}
+.menu-toggle{
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
