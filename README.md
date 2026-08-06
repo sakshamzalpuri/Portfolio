@@ -24,6 +24,7 @@ Live-ish stack: React + Vite, nothing fancy, just fast to build and fast to load
 - Lucide React (icons)
 - Fonts: Geist + Plus Jakarta Sans
 
+
 ## Structure
 
 ```text
