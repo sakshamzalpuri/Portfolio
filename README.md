@@ -1,107 +1,72 @@
-<div align="center">
+# Saksham Zalpuri — Portfolio
 
-# 🌐 Saksham Zalpuri — Portfolio
+My personal portfolio site. Dark theme, clean layout, built to actually show off my work instead of just listing it.
 
-**Frontend Developer · India**
+Live-ish stack: React + Vite, nothing fancy, just fast to build and fast to load.
 
-[![Live Site](https://img.shields.io/badge/Live%20Site-sakshamzalpuri.dev-black?style=for-the-badge&logo=vercel&logoColor=white)](https://sakshamzalpuri.dev)
+## What's in it
 
+- Header that collapses into a mobile menu on smaller screens
+- Hero section intro-ing me as a frontend dev
+- Layout that doesn't break between desktop, tablet, and phone
+- Resume download (pulls straight from a Google Docs export as PDF)
+- "View Work" CTA that jumps to my projects
+- A workspace photo with a grayscale-to-color hover effect
+- Design system built around a lime accent color + CSS variables, so theming isn't a pain
+- Tried to keep the HTML semantic and accessible — labeled inputs, proper tags, etc.
 
+## Stack
 
-</div>
+- React
+- Vite
+- JavaScript
+- CSS3
+- Lucide React (icons)
+- Fonts: Geist + Plus Jakarta Sans
 
----
+## Structure
 
-## 📌 About
-
-Personal portfolio website built from scratch with vanilla HTML, CSS, and JavaScript. Clean design, smooth animations, and fully responsive — showcasing my skills, tech stack, and projects.
-
-> *"Frontend developer building responsive, user-focused web interfaces using HTML, CSS, JavaScript and React. Clean UI, real performance, ideas turned into working products."*
-
----
-
-## ✨ Features
-
-- 🎯 **Hero Section** — Introduction with availability badge and direct links
-- 🛠️ **Tech Stack** — Categorized skills display with icons
-- 📁 **Projects Grid** — Dynamically rendered project cards via JavaScript
-- 📜 **Scroll Progress Bar** — Visual reading progress indicator
-- 🍔 **Hamburger Side Menu** — Accessible, keyboard-navigable navigation
-- 📱 **Fully Responsive** — Works on all screen sizes
-- ⚡ **GSAP Animations** — Smooth entrance and interaction animations
-- 🔒 **Accessible** — ARIA labels and semantic HTML throughout
-
----
-
-## 🧰 Tech Stack
-
-| Category  | Technologies                              |
-| --------- | ----------------------------------------- |
-| Frontend  | HTML5, CSS3, JavaScript (Vanilla)         |
-| Animation | GSAP 3                                    |
-| Icons     | RemixIcon, Font Awesome                   |
-| Fonts     | Poppins (Google Fonts)                    |
-| Hosting   | GitHub Pages (Custom Domain)              |
-
----
-
-## 📂 Project Structure
-
-```
-portfolio/
-├── index.html          # Main HTML structure
-├── style/
-│   └── style.css       # All styling
-├── script/
-│   └── main.js         # Interactivity, menu, project rendering
+```text
+my-portfolio/
 ├── assets/
-│   ├── favicon.ico
 │   ├── banner.svg
-│   └── icons/
-│       └── skills/     # Skill icons (SVG)
-├── CNAME               # Custom domain config
+│   └── hero.jpg
+├── src/
+│   ├── components/
+│   │   ├── Header.jsx
+│   │   └── Hero.jsx
+│   ├── App.css
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+├── index.html
+├── package.json
 └── README.md
 ```
 
----
-
-## 🚀 Projects Showcased
-
-### 01 — [GitHub Profile Finder](https://sakshamzalpuri.github.io/github-user-finder/)
-> A web application that interacts with the GitHub REST API to search for users and display their profile details, repositories, and statistics in a clean and responsive interface.
-
-**Tags:** `HTML` `CSS` `JavaScript` `GitHub API`
-
----
-
-## 🏃 Run Locally
-
-No build tools or dependencies required — just open in a browser.
+## Running it locally
 
 ```bash
-# Clone the repository
-git clone https://github.com/sakshamzalpuri/Portfolio.git
-
-# Navigate into the project
-cd Portfolio
-
-# Open in browser
-start index.html   # Windows
-open index.html    # macOS
+npm install
+npm run dev
 ```
 
-Or use the **Live Server** extension in VS Code for hot reload.
+Build for production:
+
+```bash
+npm run build
+```
+
+Lint:
+
+```bash
+npm run lint
+```
+
+## License
+
+MIT — see [LICENSE](LICENSE).
 
 ---
 
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE).
-
----
-
-<div align="center">
-
-Made with ❤️ by **Saksham Zalpuri**
-
-</div>
+Built by **Saksham Zalpuri**
