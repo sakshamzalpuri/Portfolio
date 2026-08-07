@@ -1,0 +1,38 @@
+/* Footer */
+.site-footer {
+  padding:  0;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 5.5rem;
+}
+
+.footer-content small,
+.footer-content nav {
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.footer-content nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-content nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.expertise-section p,
+.expertise-section span,
+.expertise-section li,
+.expertise-section li {
+  font-family: var(--font-body);
+}
+

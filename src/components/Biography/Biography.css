@@ -1,0 +1,79 @@
+/* Biography Section */
+.biography-section {
+  padding: 11.25rem 1.5rem;
+}
+
+.biography-heading {
+  position: relative;
+  min-height: 8rem;
+  margin-bottom: 4rem;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+.biography-eyebrow {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  letter-spacing: 0.4rem;
+}
+
+.biography-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  gap: 4rem;
+  align-items: start;
+}
+
+.biography-main h2 {
+  margin: 0 0 3rem;
+  color: var(--text-main);
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 5vw, 4.5rem);
+  font-weight: 800;
+  letter-spacing: -0.06em;
+  line-height: 1.1;
+}
+
+.biography-main h2 em {
+  color: var(--primary-lime);
+  font-style: italic;
+}
+
+.biography-main p {
+  max-width: 42rem;
+  color: var(--text-secondary);
+  font-family: var(--font-body);
+  font-size: 1.25rem;
+  line-height: 1.6;
+}
+
+.biography-details {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  border-left: 1px solid var(--border-subtle);
+  padding: 5rem 0 0 2.5rem;
+}
+
+.biography-details strong {
+  display: block;
+  margin-bottom: 0.75rem;
+  color: var(--primary-lime);
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.biography-details span {
+  display: block;
+  color: var(--text-main);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.55;
+}
+

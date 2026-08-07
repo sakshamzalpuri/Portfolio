@@ -1,0 +1,203 @@
+@media (max-width: 768px) {
+  .hero-section {
+    padding-top: 3rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .eyebrow {
+    margin-bottom: 1.15rem;
+    font-size: 0.75rem;
+  }
+
+  .hero-title {
+    font-size: clamp(2.35rem, 12vw, 4rem);
+    margin-bottom: 1.35rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .hero-cta-group {
+    display: block;
+  }
+
+  .hero-actions {
+    gap: 0.75rem;
+  }
+
+  .availability-text {
+    margin-top: 1rem;
+  }
+
+  .btn-primary {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.82rem;
+  }
+
+  .btn-secondary {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.82rem;
+  }
+
+  .availability-text {
+    font-size: 0.75rem;
+  }
+
+  .hero-banner-img {
+    height: 300px;
+  }
+
+  .biography-section {
+    padding: 5rem 1rem;
+  }
+
+  .biography-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .biography-main h2 {
+    margin-bottom: 2rem;
+    font-size: clamp(2.2rem, 10vw, 3.5rem);
+  }
+
+  .biography-main p {
+    font-size: 0.9rem;
+  }
+
+  .biography-details {
+    padding: 1.5rem 0 0 1.5rem;
+  }
+
+  .expertise-section {
+    padding: 4.5rem 0 5rem;
+  }
+
+  .expertise-heading {
+    align-items: flex-end;
+    margin-bottom: 2rem;
+  }
+
+  .expertise-heading p {
+    font-size: 0.5rem;
+    letter-spacing: 0.16em;
+  }
+
+  .expertise-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .expertise-card {
+    min-height: 7.5rem;
+    padding: 1.25rem 1rem;
+  }
+
+  .expertise-card:nth-child(2n) {
+    border-right: 0;
+  }
+
+  .expertise-card:nth-last-child(-n + 4) {
+    border-bottom: 1px solid var(--border-subtle);
+  }
+
+  .expertise-card:nth-last-child(-n + 2) {
+    border-bottom: 0;
+  }
+
+  .expertise-card small {
+    margin-bottom: 1.25rem;
+    font-size: 0.55rem;
+  }
+
+  .expertise-card h3 {
+    font-size: 1rem;
+  }
+
+  .selected-work-section {
+    padding: 5rem 0;
+  }
+
+  .biography-heading,
+  .selected-work-heading {
+    min-height: 5.5rem;
+  }
+
+  .project-card {
+    min-height: 27rem;
+    padding: 2rem 1.25rem;
+  }
+
+  .project-card + .project-card {
+    margin-top: 2rem;
+  }
+
+  .project-content h2 {
+    margin-top: 2rem;
+    font-size: 2.1rem;
+  }
+
+  .project-content p,
+  .project-details p {
+    font-size: .5rem;
+  }
+
+  .project-details {
+    width: 100%;
+  }
+
+  .project-icons {
+    top: 2rem;
+    right: 1.25rem;
+    gap: .7rem;
+  }
+
+  .project-detail-columns {
+    gap: 1.2rem;
+  }
+
+  .project-details strong {
+    font-size: .48rem;
+  }
+
+  .project-tags {
+    margin-top: 2.3rem;
+  }
+
+  .project-tags span {
+    padding: .25rem .3rem;
+    font-size: .4rem;
+  }
+
+  .footer-content {
+    min-height: 4rem;
+  }
+
+  .footer-content small {
+    display: none;
+  }
+
+  .footer-content nav {
+    gap: .6rem;
+    font-size: .4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-content {
+    height: 64px;
+  }
+
+  .logo {
+    font-size: 1.4rem;
+  }
+
+  .hero-banner-card {
+    margin-top: 2.5rem;
+  }
+
+  .hero-banner-img {
+    height: 220px;
+  }
+}

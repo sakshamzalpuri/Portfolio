@@ -1,0 +1,147 @@
+/* Selected Work */
+.selected-work-section {
+  max-width: 1280px;
+  padding: 11.25rem 1.5rem;
+}
+
+.biography-heading,
+.selected-work-heading {
+  position: relative;
+  min-height: 7rem;
+  margin-bottom: 4rem;
+  display: flex;
+  align-items: center;
+}
+
+.biography-number,
+.selected-work-number {
+  position: absolute;
+  top: -4rem;
+  left: .25rem;
+  color: #111c34;
+  font-family: var(--font-display);
+  font-size: 10rem;
+  font-weight: 800;
+  letter-spacing: 0.08rem;
+  line-height: .8;
+  user-select: none;
+}
+
+.selected-work-number {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.biography-number {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.biography-eyebrow,
+.selected-work-eyebrow {
+  position: relative;
+  z-index: 1;
+  letter-spacing: 0.4rem;
+  margin: 0;
+}
+
+.project-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 34.5rem;
+  padding: 4rem;
+  background: #222a3d;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  transition: border-color var(--transition-fast), background-color var(--transition-fast);
+}
+
+.project-card:hover {
+  border-color: var(--primary-lime);
+}
+
+.project-card + .project-card {
+  margin-top: 4rem;
+}
+
+.project-content small,
+.project-details strong {
+  color: var(--primary-lime);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: .13em;
+  font-weight: 600;
+}
+
+.project-content h2 {
+  margin: 3rem 0 .7rem;
+  color: var(--text-main);
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 5vw, 4.5rem);
+  font-weight: 600;
+  letter-spacing: -.07em;
+  line-height: 1;
+}
+
+.project-content p,
+.project-details p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  letter-spacing: .07em;
+  font-weight: 600;
+}
+
+.project-status { display:inline-flex; align-items:center; margin-top:1.5rem; padding:.75rem 1rem; color:var(--primary-lime); background:rgba(157,223,46,.1); border:1px solid rgba(157,223,46,.35); border-radius:var(--radius-md); font-family:var(--font-body); font-size:1rem; font-weight:600; letter-spacing:.02em; }
+
+.project-details {
+  width: 100%;
+  padding-top: 0;
+}
+
+.project-icons {
+  position: absolute;
+  top: 4.25rem;
+  right: 4rem;
+  display: flex;
+  gap: 1.1rem;
+  color: var(--text-main);
+}
+
+.project-details strong {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.project-detail-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 7rem;
+}
+
+.project-details p {
+  margin-bottom: 0;
+  line-height: 1.6;
+  letter-spacing: 0;
+  font-size: 1rem;
+}
+
+.project-tags {
+  display: flex;
+  gap: .6rem;
+  margin-top: 3.5rem;
+}
+
+.project-tags span {
+  padding: .55rem 1.25rem;
+  color: var(--text-main);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  font-family: var(--font-mono);
+  background: var(--surface-card);
+  font-size: .625rem;
+  letter-spacing: .08em;
+}
