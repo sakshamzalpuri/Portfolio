@@ -4,5 +4,15 @@
 @import './components/Biography/Biography.css';
 @import './components/Expertise/Expertise.css';
 @import './components/SelectedWork/SelectedWork.css';
+@import './components/CurrentlyBuilding/CurrentlyBuilding.css';
+@import './components/contact/contact.css';
 @import './components/Footer/Footer.css';
 @import './styles/responsive.css';
+
+.section-overline {
+  font-size: 1rem;
+  line-height: 1.2;
+  font-family: var(--font-mono);
+  color: #888888;
+}
+

@@ -1,14 +1,18 @@
 export default function Biography() {
   return (
     <section className="biography-section container" id="about">
-      <div className="biography-heading">
-        <span className="biography-number">01</span>
-        <div className="eyebrow biography-eyebrow">BIOGRAPHY</div>
+      <div className="section-heading-wrapper">
+        <span className="section-overline">
+          About
+        </span>
+        <h2 className="section-heading-title">
+          About me
+        </h2>
       </div>
 
       <div className="biography-grid">
         <div className="biography-main">
-          <h2>â€œI build interfaces<br />that are fast, <em>intuitive</em><br />and accessible.â€</h2>
+          <h2>"I build interfaces<br />that are fast, <em>intuitive</em><br />and accessible."</h2>
           <p>I'm a frontend developer focused on building responsive, accessible, and performant web applications. I enjoy turning ideas into production-ready products while continuously improving my skills in React and full-stack development.</p>
         </div>
 

@@ -4,15 +4,18 @@ export default function Expertise() {
   return (
     <section className="expertise-section" id="skills">
       <div className="container">
-        <div className="expertise-heading">
-          <h2>EXPERTISE<span>.</span></h2>
-          <p>CORE PROFICIENCIES</p>
+        <div className="section-heading-wrapper">
+          <span className="section-overline">
+            Expertise
+          </span>
+          <h2 className="section-heading-title">
+            Tech Stack &amp; Tools
+          </h2>
         </div>
 
         <div className="expertise-grid">
-          {skills.map((skill, index) => (
+          {skills.map((skill) => (
             <div className="expertise-card" key={skill}>
-              <small>{String(index + 1).padStart(2, '0')}</small>
               <h3>{skill}</h3>
             </div>
           ))}

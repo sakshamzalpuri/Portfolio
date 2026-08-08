@@ -1,22 +1,22 @@
 /* Biography Section */
 .biography-section {
-  padding: 11.25rem 1.5rem;
+  padding: 5rem 1.5rem;
+  border-top: 1px solid var(--border-subtle);
 }
 
-.biography-heading {
-  position: relative;
-  min-height: 8rem;
-  margin-bottom: 4rem;
+.section-heading-wrapper {
   display: flex;
-  align-items: center;
-  padding-left: 1rem;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 2rem;
 }
 
-.biography-eyebrow {
-  position: relative;
-  z-index: 1;
-  margin: 0;
-  letter-spacing: 0.4rem;
+.section-heading-title {
+  margin-top: 0.25rem;
+  font-size: clamp(1.75rem, 2vw, 2.25rem);
+  line-height: 1.1;
+  font-weight: 700;
+  color: #ffffff;
 }
 
 .biography-grid {
@@ -76,4 +76,3 @@
   font-weight: 500;
   line-height: 1.55;
 }
-
