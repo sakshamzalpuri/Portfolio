@@ -1,0 +1,64 @@
+/* Currently Building */
+.currently-building-section {
+  padding: 0 2rem 7rem;
+}
+
+.currently-building-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 3rem;
+  min-height: 20rem;
+  padding: 4rem;
+  background: var(--primary-lime);
+  color: var(--on-lime);
+  border-radius: var(--radius-md);
+}
+
+.currently-building-label {
+  display: block;
+  margin-bottom: 1rem;
+  color: rgba(33, 54, 0, 0.55);
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 0.95;
+}
+
+.currently-building-card h2 {
+  margin-bottom: 1rem;
+  color: var(--on-lime);
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+.currently-building-card p {
+  max-width: 34rem;
+  color: rgba(33, 54, 0, 0.86);
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.currently-building-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.9rem;
+  min-width: 13.5rem;
+  padding: 1.2rem 1.6rem;
+  background: var(--on-lime);
+  color: var(--primary-lime);
+  border-radius: var(--radius-md);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+}
+
+.currently-building-button:hover {
+  background: #2a1808;
+}
