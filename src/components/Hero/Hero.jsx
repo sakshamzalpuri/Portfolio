@@ -19,7 +19,7 @@ export default function Hero() {
                         </p>
                         <div className="hero-cta-group">
                             <div className="hero-actions">
-                                <a href="https://docs.google.com/document/d/1YjW_GTyVRB6c9gOVwKBMus0aGISPk6FGzzg7xHsUg_0/export?format=pdf" className="btn-primary" download="saksham-zalpuri-resume.pdf">
+                                <a href="https://docs.google.com/document/d/1CIhU7zXEM-Kl9UB-M_kYhtqjY1wKsGlov2NVCRe97h4/export?format=pdf" className="btn-primary" download="saksham-zalpuri-resume.pdf">
                                     RESUME <ArrowUpRight size={18} />
                                 </a>
                                 <a href="#work" className="btn-secondary">

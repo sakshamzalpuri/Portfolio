@@ -23,7 +23,7 @@ export default function Biography() {
           </div>
           <div>
             <strong>CURRENT FOCUS</strong>
-            <span>React Applications<br />Full Stack Development<br />Performance Optimization</span>
+            <span>React Applications<br />API Integration & State Management<br />Performance Optimization</span>
           </div>
           <div>
             <strong>INTERESTS</strong>
