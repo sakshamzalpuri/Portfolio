@@ -3,17 +3,6 @@ import ProjectCard from '../SelectedWork/ProjectCard';
 const projects = [
   {
     id: '01',
-    title: 'DevFlow',
-    category: 'Job Application Tracker',
-    description: 'Track job applications, statuses, and hiring progress from one clean dashboard.',
-    status: 'Work in Progress',
-    techStack: ['React', 'Node.js'],
-    extraTech: '+3',
-    previewTone: 'lime',
-    links: { live: '#', source: '#' },
-  },
-  {
-    id: '02',
     title: 'GitHub Profile Finder',
     category: 'GitHub Profile Search App',
     description: 'Search GitHub users, view profile details, repositories, developer insights, and search history.',

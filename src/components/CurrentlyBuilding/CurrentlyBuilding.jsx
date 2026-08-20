@@ -6,14 +6,14 @@ export default function CurrentlyBuilding() {
       <div className="currently-building-card">
         <div>
           <span className="currently-building-label">CURRENTLY BUILDING</span>
-          <h2>DevFlow</h2>
+          <h2>Currently Building Projects</h2>
           <p>
-            Job application tracker built with React, Node.js, Express,
-            Prisma, and PostgreSQL.
+            Building responsive web projects that focus on clean interfaces,
+            reusable components, and practical user experiences.
           </p>
         </div>
         <a href="#work" className="currently-building-button">
-          VIEW PROJECT <ArrowUpRight size={18} />
+          VIEW WORK <ArrowUpRight size={18} />
         </a>
       </div>
     </section>
