@@ -1,15 +1,22 @@
+import './Footer.css';
+
 export default function Footer() {
   return (
     <footer className="site-footer">
       <div className="container footer-content">
-        <a className="logo" href="#top">SZ<span className="dot">.</span></a>
-        <small>Copyright 2024 Saksham Zalpuri.</small>
-        <nav aria-label="Footer navigation">
-          <a href="https://github.com/sakshamzalpuri" target="_blank" rel="noopener noreferrer">GITHUB</a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LINKEDIN</a>
-          <a href="mailto:email@sakshamzalpuri.com">EMAIL</a>
-          <a href="https://docs.google.com/document/d/1YjW_GTyVRB6c9gOVwKBMus0aGISPk6FGzzg7xHsUg_0/export?format=pdf" download="saksham-zalpuri-resume.pdf">RESUME</a>
-        </nav>
+        <div className="footer-left">
+          <a className="footer-logo" href="#top">
+            SZ<span className="dot">.</span>
+          </a>
+          <span className="footer-tagline">Crafted with React &amp; Tailwind</span>
+        </div>
+
+        <div className="footer-right">
+          <span className="footer-copyright">
+            &copy; {new Date().getFullYear()} Saksham Zalpuri. All rights reserved.
+          </span>
+          <span className="footer-location">Pune, India</span>
+        </div>
       </div>
     </footer>
   );

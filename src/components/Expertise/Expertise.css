@@ -1,56 +1,157 @@
-/* Expertise Section */
+/* Tech Stack & Tools Section */
+/* -------------------------------------------------- */
 .expertise-section {
-  padding: 5rem 0;
-  border-top: 1px solid var(--border-subtle);
-  border-bottom: 1px solid var(--border-subtle);
+  padding: 3.5rem 0;
+  border-top: 1px dashed rgba(255, 255, 255, 0.08);
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.08);
 }
 
 .section-heading-wrapper {
   display: flex;
   flex-direction: column;
   text-align: left;
-  margin-bottom: 2rem;
+  margin-bottom: 1.75rem;
+}
+
+.section-overline {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #71717a;
+  letter-spacing: 0.02em;
+  margin-bottom: 0.35rem;
 }
 
 .section-heading-title {
-  margin-top: 0.25rem;
-  font-size: clamp(1.75rem, 2vw, 2.25rem);
-  line-height: 1.1;
+  font-size: clamp(1.8rem, 3.5vw, 2.35rem);
   font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+}
+
+/* Tech Stack Container & Grid */
+.tech-stack-container {
+  width: 100%;
+}
+
+.tech-stack-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+/* Individual Tech Tile */
+.tech-tile {
+  position: relative;
+  width: 52px;
+  height: 52px;
+  background-color: #121215;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1),
+              background-color 0.2s ease,
+              border-color 0.2s ease,
+              box-shadow 0.2s ease;
+  user-select: none;
+}
+
+.tech-tile:hover {
+  transform: translateY(-3px) scale(1.04);
+  background-color: #18181d;
+  border-color: rgba(255, 255, 255, 0.22);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.45);
+  z-index: 10;
+}
+
+.tech-tile-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  transition: transform 0.2s ease;
+}
+
+.tech-tile:hover .tech-tile-icon {
+  transform: scale(1.08);
+}
+
+/* Floating Tooltip */
+.tech-tooltip {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #1a1a1f;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  padding: 0.35rem 0.65rem;
+  white-space: nowrap;
+  pointer-events: none;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  animation: tooltipFadeIn 0.15s ease-out;
+  z-index: 50;
+}
+
+.tech-tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: #1a1a1f transparent transparent transparent;
+}
+
+.tooltip-name {
+  font-size: 0.78rem;
+  font-weight: 600;
   color: #ffffff;
 }
 
-.expertise-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  border-radius: var(--radius-md);
-  overflow: hidden;
+.tooltip-cat {
+  font-size: 0.68rem;
+  color: #a1a1aa;
 }
 
-.expertise-card {
-  min-height: 10rem;
-  padding: 2.1rem 2.5rem;
-  border: 1px solid var(--border-subtle);
-  transition: background-color var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast);
+@keyframes tooltipFadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 4px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
 }
 
-.expertise-card:hover {
-  position: relative;
-  z-index: 1;
-  background-color: var(--surface-bright);
-  border-color: var(--primary-lime);
-  transform: translateY(-3px);
-}
+@media (max-width: 768px) {
+  .expertise-section {
+    padding: 2.75rem 0;
+  }
 
-.expertise-card:hover h3 {
-  color: var(--primary-lime);
-}
+  .tech-tile {
+    width: 46px;
+    height: 46px;
+    border-radius: 10px;
+  }
 
-.expertise-card h3 {
-  margin: 0;
-  color: var(--text-main);
-  font-family: var(--font-display);
-  font-size: 1.45rem;
-  font-weight: 600;
-  letter-spacing: -0.04em;
+  .tech-tile-icon {
+    width: 22px;
+    height: 22px;
+  }
+
+  .tech-stack-grid {
+    gap: 0.6rem;
+  }
 }

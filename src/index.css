@@ -67,12 +67,17 @@ body {
   width: 100%;
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 2.25rem;
+  border-left: 1px dashed rgba(255, 255, 255, 0.08);
+  border-right: 1px dashed rgba(255, 255, 255, 0.08);
+  position: relative;
 }
 
 @media (max-width: 768px) {
   .container {
     padding: 0 1.25rem;
+    border-left: 1px dashed rgba(255, 255, 255, 0.05);
+    border-right: 1px dashed rgba(255, 255, 255, 0.05);
   }
 }
 

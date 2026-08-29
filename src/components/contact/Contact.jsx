@@ -1,39 +1,63 @@
-import { ArrowUpRight } from 'lucide-react';
-
-const contactLinks = [
-  { label: 'EMAIL', href: 'mailto:email@sakshamzalpuri.com' },
-  { label: 'GITHUB', href: 'https://github.com/sakshamzalpuri' },
-  { label: 'LINKEDIN', href: 'https://linkedin.com' },
-  {
-    label: 'RESUME',
-    href: 'https://docs.google.com/document/d/1YjW_GTyVRB6c9gOVwKBMus0aGISPk6FGzzg7xHsUg_0/export?format=pdf',
-  },
-];
+import { useState } from 'react';
+import { Mail, Check, Copy } from 'lucide-react';
+import './contact.css';
 
 export default function Contact() {
-  return (
-    <section className="contact-section" id="contact">
-      <div className="container contact-inner">
-        <div className="contact-heading">
-          <h2>Let's work<br />together<span>.</span></h2>
-        </div>
+  const [copied, setCopied] = useState(false);
+  const email = 'email@sakshamzalpuri.com';
 
-        <div className="contact-content">
-          <p>
-            Open to frontend developer roles, internships, and project
-            collaborations.
+  const handleCopy = () => {
+    navigator.clipboard.writeText(email);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+
+  return (
+    <section className="contact-section container" id="contact">
+      <div className="section-heading-wrapper">
+        <span className="section-overline">Contact</span>
+        <h2 className="section-heading-title">Get In Touch</h2>
+      </div>
+
+      <div className="contact-card">
+        <div className="contact-card-main">
+          <h3 className="contact-prompt">Let's build something together.</h3>
+          <p className="contact-subtext">
+            Whether you have a project in mind, opportunities to discuss, or just
+            want to connect, feel free to reach out. I'm always open to new ideas
+            and conversations.
           </p>
 
-          <div className="contact-links" aria-label="Contact links">
-            {contactLinks.map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                target={link.href.startsWith('mailto:') ? undefined : '_blank'}
-                rel={link.href.startsWith('mailto:') ? undefined : 'noopener noreferrer'}
-                download={link.label === 'RESUME' ? 'saksham-zalpuri-resume.pdf' : undefined}>{link.label} <ArrowUpRight size={16} /></a>
-            ))}
+          <div className="contact-actions-row">
+            <a href={`mailto:${email}`} className="btn-contact-primary">
+              <Mail size={16} />
+              Send Email
+            </a>
+
+            <button
+              type="button"
+              className="btn-contact-copy"
+              onClick={handleCopy}
+              title="Copy email to clipboard"
+            >
+              {copied ? (
+                <>
+                  <Check size={16} className="text-green" />
+                  Copied to Clipboard!
+                </>
+              ) : (
+                <>
+                  <Copy size={16} />
+                  {email}
+                </>
+              )}
+            </button>
           </div>
+        </div>
+
+        <div className="contact-status-bar">
+          <span className="status-live-dot"></span>
+          <span className="status-text">Available for frontend roles &amp; freelance projects</span>
         </div>
       </div>
     </section>

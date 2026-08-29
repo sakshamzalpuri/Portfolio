@@ -7,7 +7,7 @@
   z-index: 100;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--border-subtle);
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.08);
 }
 
 .header-content {
@@ -48,8 +48,9 @@
   padding: 0.4rem 0;
 }
 
-.nav-link:hover {
-  color: var(--primary-lime);
+.nav-link:hover,
+.nav-link.active {
+  color: var(--primary-lime, #f59e0b);
 }
 
 .nav-link::after {
@@ -59,12 +60,18 @@
   left: 0;
   width: 0%;
   height: 2px;
-  background-color: var(--primary-lime);
+  background-color: var(--primary-lime, #f59e0b);
   transition: width var(--transition-fast);
 }
 
-.nav-link:hover::after {
+.nav-link:hover::after,
+.nav-link.active::after {
   width: 100%;
+}
+
+.mobile-nav-link.active {
+  color: var(--primary-lime, #f59e0b);
+  font-weight: 700;
 }
 
 /* Mobile Menu Toggle Button */
